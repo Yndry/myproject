@@ -1,0 +1,25 @@
+package ZaurTregulovYglub.multithreading;
+
+import java.util.concurrent.Executors;
+
+public class ExecqutorServive {
+    //Создадим threadPoll
+    public static void main(String[] args) {
+ExecqutorServive execqutorServive = Executors.newFixedThreadPool(5);
+
+        
+    }
+}
+
+class RunnabelImplements implements Runnable {
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
