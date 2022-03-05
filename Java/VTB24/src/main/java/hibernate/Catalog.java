@@ -1,3 +1,5 @@
+package hibernate;
+
 import javax.persistence.*;
 @Entity
 @Table (name = "Catalogs")
@@ -35,7 +37,7 @@ public class Catalog {
 
     @Override
     public String toString() {
-        return "Catalog{" +
+        return "hibernate.Catalog{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 '}';
