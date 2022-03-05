@@ -1,9 +1,9 @@
+package hibernate;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
 
 public class MainClass {
 
@@ -19,7 +19,7 @@ public class MainClass {
 
 //           CREAT
 //            session = factory.getCurrentSession();
-//            Catalog catalog = new Catalog("Harry Potter #1");
+//            hibernate.Catalog catalog = new hibernate.Catalog("Harry Potter #1");
 //            session.beginTransaction();
 //            session.save(catalog);
 //            session.getTransaction();
@@ -28,22 +28,22 @@ public class MainClass {
             //READ
 //            session = factory.getCurrentSession();
 //            session.beginTransaction();
-//            Catalog catalog = session.get(Catalog.class, 1L);
+//            hibernate.Catalog catalog = session.get(hibernate.Catalog.class, 1L);
 //            session.getTransaction().commit();
 //            System.out.print(catalog);
 
             //UPDATE
 //            session = factory.getCurrentSession();
 //            session.beginTransaction();
-//            Catalog catalog = session.get(Catalog.class, 1L);
+//            hibernate.Catalog catalog = session.get(hibernate.Catalog.class, 1L);
 //            catalog.setTitle("New name");
 //
 
             //Получение списка обьектов
 //            session = factory.getCurrentSession();
 //            session.beginTransaction();
-//            List<Catalog> catalogList = session.createQuery("from Catalog").getResultList();
-//            List<Catalog> catalogList1 = session.createQuery("from Catalog c where c.title = :title").setParameter("title", "Volkodav").getResultList();
+//            List<hibernate.Catalog> catalogList = session.createQuery("from hibernate.Catalog").getResultList();
+//            List<hibernate.Catalog> catalogList1 = session.createQuery("from hibernate.Catalog c where c.title = :title").setParameter("title", "Volkodav").getResultList();
 //            System.out.println(catalogList1);
 //            session.getTransaction().commit();
 
